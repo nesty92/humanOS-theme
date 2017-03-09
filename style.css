@@ -1,0 +1,15 @@
+/*
+ Theme Name:   Materialize for humanOS
+ Theme URI:    http://humanos.uci.cu
+ Description:  Materialize for humanOS
+ Author:       Adrian Arencibia, Ernesto Zantana
+
+ Template:     materialize
+ Version:      0.0.1
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  materialize-humanOS
+*/
+@import url("../materialize/style.css");
+
+/* =Aquí empieza la personalización de tu tema
+-------------------------------------------------------------- */

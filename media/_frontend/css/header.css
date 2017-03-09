@@ -1,0 +1,336 @@
+
+header.mythemes-miss-header-image nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-wrapper{
+    background-color: #fafafa;
+}
+
+div.mythemes-header a ,div.mythemes-header i{
+  color: #FFF !important;
+}
+div.mythemes-header  p{
+  color: #BDC3C7 !important;
+}
+
+
+.slides .row {
+    text-align: left !important;
+}
+
+.slider {
+    height: 200px !important;
+}
+.parallax{
+    z-index: 0 !important;
+}
+
+.slider .indicators{
+  z-index: 10;
+}
+
+.link_down img {
+    width: 30px;
+    height: 30px;
+}
+
+.link_down {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 80vh;
+    z-index: 100;
+}
+
+.link_up img {
+    width: 30px;
+    height: 30px;
+}
+
+.link_up {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 0;
+
+    margin-right: 10px;
+    text-align: right;
+    top: 85vh;
+    z-index: 100;
+}
+
+/* MYTHEMES TOPPER */
+nav.mythemes-topper {
+    /*text-align: right;*/
+    line-height: inherit;
+    /*height: auto;*/
+
+}
+
+li.logo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+}
+
+li.logo a.mylogo {
+    width: 100%;
+    text-align: center !important;
+}
+
+li.search {
+
+    left: 0;
+    right: 0;
+    top: 120px;
+    margin-top: 1px;
+    padding: 1px 0 0 0;
+    z-index: 2;
+    color: #37474F !important;
+}
+
+li.search .search-wrapper {
+    /*margin: 0 0;
+    transition: margin .25s ease;*/
+}
+
+/*li.search .search-wrapper:active{
+  margin: 0 0px;
+}*/
+
+/*li.search .search-wrapper.focused{
+    margin: 0 2px;
+    color: #B53E7E;
+}*/
+
+li.search .search-wrapper input#search {
+    display: inline;
+
+    font-weight: 300;
+    width: 70%;
+    height: 45px;
+    margin: 0;
+    padding: 0 15px 0 20px;
+    border: 0;
+    background-color: transparent;
+    border: none;
+
+    border-radius: 0;
+    outline: none;
+
+    font-size: 1.2rem;
+
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+
+li.search .search-wrapper i {
+    display: inline !important;
+    position: relative;
+    float: left;
+    left: 5%;
+}
+
+li.search .search-results {
+    margin: 0;
+    border-top: 1px solid #e9e9e9;
+    background-color: #fff;
+}
+
+a.mylogo {
+    width: 15%;
+    text-align: left !important;
+}
+
+.carousel.carousel-slider {
+    z-index: 2;
+    height: 100%;
+}
+
+.slider .indicators .indicator-item.active {
+
+    background-color: #773F5C !important;
+
+}
+
+.slider .slides {
+    background: transparent !important;
+
+}
+
+.slider {
+    z-index: 3;
+}
+
+.slider .slides li .caption p {
+    color: #616161 !important;
+
+}
+
+.slider .slides li {
+    /*overflow-y: scroll!important;*/
+
+}
+
+.slider .slides li div.container {
+    margin-top: .5em;
+}
+
+/* HEADER IMAGE */
+div.mythemes-header {
+}
+
+div.mythemes-header div.valign-cell-wrapper {
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+    box-shadow: inset 0 0px 3px 3px rgba(0, 0, 0, 0.08);
+}
+
+div.mythemes-header a,
+div.mythemes-header a:hover {
+    text-decoration: none;
+}
+
+div.mythemes-header a.header-headline {
+    color: #e53935;
+    font-family: "Poiret One", sans-serif, Arial, serif;
+}
+
+div.mythemes-header a.header-headline,
+div.mythemes-header a.header-description {
+    display: block;
+
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+}
+
+div.mythemes-header a.header-description {
+    color: rgba(0, 0, 0, 0.55);
+    font-family: "Open Sans", Helvetica, Arial, sans-serif, serif;
+    margin-top: 15px;
+}
+
+div.mythemes-header a.header-description:hover {
+    color: rgba(0, 0, 0, 1.0);
+}
+
+@media only screen and (max-width: 993px) {
+    .slider .slides h5 {
+        font-size: 1.2rem !important;
+    }
+
+    .slider .slides h4 {
+        font-size: 1.4rem !important;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .slider .slides h5 {
+        font-size: 1.2rem !important;
+    }
+
+    .slider .slides h4 {
+        font-size: 1.6rem !important;
+    }
+}
+
+/*@media (min-width: 1200px ){
+    .mythemes-header a.header-headline{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .mythemes-header a.header-description{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+@media ( min-width: 992px ) and (max-width: 1199px ){
+    .mythemes-header a.header-headline{
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .mythemes-header a.header-description{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+@media ( min-width: 768px ) and ( max-width: 991px ){
+    .mythemes-header a.header-headline{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .mythemes-header a.header-description{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+@media ( min-width: 481px ) and ( max-width: 767px ){
+    .mythemes-header a.header-headline{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .mythemes-header a.header-description{
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@media ( max-width:480px ){
+    .mythemes-header a.header-headline{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .mythemes-header a.header-description{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}*/
+
+.mythemes-header-buttons {
+    margin-top: 50px;
+}
+
+.mythemes-first-button,
+.mythemes-second-button {
+    color: #ffffff;
+    margin: 10px;
+}
+
+.mythemes-first-button:hover,
+.mythemes-second-button:hover {
+    color: #ffffff;
+}
+
+/*@media ( max-width:480px ){
+    .mythemes-first-button,
+    .mythemes-second-button{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}*/
+@media only screen and ( max-width: 992px ) {
+    .slider .slides li {
+        top: 3% !important;
+    }
+
+    .slider .slides li div.container {
+        margin-top: 0;
+    }
+}
+
+/*@media only screen and ( min-width: 993px ) {*/
+    /*.slider .slides li {*/
+        /*top: 10% !important;*/
+    /*}*/
+/*}*/
