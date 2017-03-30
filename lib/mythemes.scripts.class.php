@@ -34,15 +34,14 @@ class mythemes_humanos_scripts
         wp_register_style( 'mythemes-widgets',                  get_stylesheet_directory_uri() . '/media/_frontend/css/widgets.css', null, $ver );
         wp_register_style( 'mythemes-comments',                 get_stylesheet_directory_uri() . '/media/_frontend/css/comments.css', null, $ver );
         wp_register_style( 'mythemes-comments-typography',      get_template_directory_uri() . '/media/_frontend/css/comments-typography.css', null, $ver );
-        wp_register_style( 'mythemes-footer',                   get_template_directory_uri() . '/media/_frontend/css/footer.css', null, $ver );
+        wp_register_style( 'mythemes-footer',                   get_stylesheet_directory_uri() . '/media/_frontend/css/footer.css', null, $ver );
         wp_register_style( 'mythemes-pretty-photo',             get_template_directory_uri() . '/media/_frontend/css/prettyPhoto.css', null, $ver );
         wp_register_style( 'mythemes-plugins',                  get_template_directory_uri() . '/media/_frontend/css/plugins.css', null, $ver );
 
         $dependency = array(
             // 'mythemes-icons',
- 'materialize-icons',
+            'materialize-icons',
             'font-awesome',
-
             'mythemes-effects',
             'mythemes-header',
             'mythemes-materialize',
