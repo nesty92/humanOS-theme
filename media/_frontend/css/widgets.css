@@ -604,8 +604,8 @@ footer aside div.widget div > ul > li ul{
     margin-left: 15px;
 }
 footer aside div.widget ul li a{
-    color: rgba( 255, 255, 255, 0.9 );
-    /*font-weight: 300;*/
+    color: #E5E5E5;
+    font-weight: 500;
 }
 footer aside div.widget ul li{
     color: rgba( 255, 255, 255, 0.6 );

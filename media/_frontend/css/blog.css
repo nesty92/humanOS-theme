@@ -2,7 +2,7 @@
 
 
 .human {
-    background-color: #773F5C;    
+    background-color: #773F5C;
 }
 .human:hover {
     background-color: #B53E7E;
@@ -147,6 +147,54 @@
 /*.card .card-content {
     padding: 3px 20px;
 }*/
+
+
+#usp_form fieldset label{
+  display: none;
+}
+
+#usp_form fieldset input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #773F5C;
+}
+#usp_form fieldset input::-moz-placeholder { /* Firefox 19+ */
+  color: #773F5C;
+}
+#usp_form fieldset input:-ms-input-placeholder { /* IE 10+ */
+  color: #773F5C;
+}
+#usp_form fieldset input:-moz-placeholder { /* Firefox 18- */
+  color: #773F5C;
+}
+
+#usp_form fieldset textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #773F5C;
+}
+#usp_form fieldset textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #773F5C;
+}
+#usp_form fieldset textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #773F5C;
+}
+#usp_form fieldset textarea:-moz-placeholder { /* Firefox 18- */
+  color: #773F5C;
+}
+#usp_form #user-submitted-post{
+  background-color: #773F5C;
+}
+
+.parsley-errors-list{
+  background-color: #b71c1c;
+  color: white;
+  margin-top: 0px !important;
+}
+.parsley-errors-list li{
+    margin-top: 0px !important;
+}
+.usp-callout-failure{
+  background-color: #b71c1c;
+  color: white;
+}
+
 .card .card-stacked a, span, i {
     color: #773F5C;
 }

@@ -1,8 +1,10 @@
 ;(function($){
     $(function(){
 
-
         $('select').material_select();
+        $('#usp_form textarea').addClass('materialize-textarea');
+        $('#usp_form #user-submitted-post').addClass('btn');
+
 
         $('.button-collapse[data-activates="nav-mobile"]').sideNav();
         // $('.parallax').parallax();
