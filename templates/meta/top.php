@@ -16,11 +16,11 @@
 
             <!-- date -->
             <?php
-                $t_time = get_post_time( 'Y-m-d', false , $post -> ID  );
-                $u_time = get_post_time( esc_attr( get_option( 'date_format' ) ) );
+                $t_time = get_post_time( 'Y-m-d h:i A', false , $post -> ID  );
+                $u_time = get_post_time( esc_attr( get_option( 'date_format' ) ), false , $post -> ID,true );
             ?>
 
-            <time datetime="<?php echo esc_attr( $t_time ); ?>"><i class="mythemes-icon-calendar"></i><?php echo sprintf( __( 'on %s' , 'materialize' ), $u_time, false, $post -> ID, true ); ?></time>
+            <time datetime="<?php echo esc_attr( $t_time ); ?>"><i class="mythemes-icon-calendar"></i><?php echo sprintf( __( 'publicado el %s' , 'humanOS' ), $u_time, false, $post -> ID, true ); ?></time>
 
             <div class="clear"></div>
 

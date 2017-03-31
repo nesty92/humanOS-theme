@@ -37,7 +37,7 @@ class mythemes_humanos_comments
 								echo '<a rel="nofollow" class="comment-quote-link" href="#respond">Citar</a>';
 								echo '</span>';
 				echo '<span class="right comment-date waves-effect waves-light" datetime="' . esc_attr( get_comment_date( 'Y-m-d' , $comment -> comment_ID ) ) . '" class="comment-time">';
-                echo get_comment_date( esc_attr( get_option( 'date_format' ) ) , $comment -> comment_ID );
+                echo get_comment_date( esc_attr( get_option( 'date_format' )." g:i a" ) , $comment -> comment_ID );
                 echo '</span>';
 
 				if (function_exists("wpua_custom_output"))  {
@@ -69,7 +69,7 @@ class mythemes_humanos_comments
 
                 echo '<span class="comment-meta">';
                 echo '<time datetime="' . esc_attr( get_comment_date( 'Y-m-d' , $comment -> comment_ID ) ) . '" class="comment-time">';
-                echo get_comment_date( esc_attr( get_option( 'date_format' ) ) , $comment -> comment_ID );
+                echo get_comment_date( esc_attr( get_option( 'date_format' )." g:i a" ) , $comment -> comment_ID );
                 echo '</time>';
 
                 echo '</span>';
