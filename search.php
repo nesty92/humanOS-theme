@@ -57,7 +57,7 @@ get_header(); ?>
 
 
     <!-- the content -->
-    <div class="content">
+    <div id="main_content" class="content">
 
         <!-- the container ( align to center ) -->
         <div class="container">

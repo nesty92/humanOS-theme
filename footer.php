@@ -187,7 +187,7 @@
                                         }
 
                                         if( !empty( $gplus ) ){
-                                            echo '<a href="' . esc_url( $gplus ) . '" class="btn-floating waves-effect waves-light mythemes-icon-gplus fa fa-gplus-square" target="_blank"></a>';
+                                            echo '<a href="' . esc_url( $gplus ) . '" class="btn-floating waves-effect waves-light mythemes-icon-gplus fa fa-google-plus-square" target="_blank"></a>';
                                         }
 
                                         if( !empty( $gcircle ) ){

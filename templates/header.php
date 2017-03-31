@@ -50,7 +50,7 @@
     $show_btn_2         = (bool)get_theme_mod( 'mythemes-header-show-btn-2', true );
 ?>
 
-<div class="mythemes-header valign-cell-wrapper overflow-wrapper parallax-container" style="height: <?echo $height?>px;">
+<div class="mythemes-header valign-cell-wrapper overflow-wrapper parallax-container" style="height: <?php echo $height;?>px;">
     <div class="slider">
         <ul class="slides">
 

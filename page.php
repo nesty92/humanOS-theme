@@ -84,7 +84,7 @@ get_header(); ?>
                         <section class="<?php echo $mythemes_humanos_layout -> classes(); ?>">
 
                             <!-- the page content wrapper -->
-                            <div <?php post_class( 'mythemes-page' ); ?>>
+                            <article <?php post_class( 'mythemes-page' ); ?>>
 
                                 <?php
                                     // the page thumbnail
@@ -128,7 +128,7 @@ get_header(); ?>
 
                                 <div class="clearfix"></div>
 
-                            </div>
+                            </article>
 
                             <!-- the page comments -->
                             <?php comments_template(); ?>

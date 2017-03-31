@@ -584,13 +584,13 @@ footer aside div.widget{
     margin-bottom: 60px;
 }
 footer aside div.widget a{
-    color: #773F5C;
+    color: rgba( 255, 255, 255, 0.9 );
 }
 footer aside div.widget a abbr{
-    color: #a5d6a7;
+    color: rgba( 255, 255, 255, 0.7 );
 }
 footer aside div.widget a:hover{
-    color: #a5d6a7
+    color: rgba( 255, 255, 255, 0.7 );
 }
 footer aside div.widget ul li{
     border-top: 1px solid rgba( 255, 255, 255, 0.05 );
@@ -604,8 +604,8 @@ footer aside div.widget div > ul > li ul{
     margin-left: 15px;
 }
 footer aside div.widget ul li a{
-    color: #66bb6a;
-    font-weight: 300;
+    color: rgba( 255, 255, 255, 0.9 );
+    /*font-weight: 300;*/
 }
 footer aside div.widget ul li{
     color: rgba( 255, 255, 255, 0.6 );
@@ -683,7 +683,7 @@ footer aside div.widget,
 footer aside div.widget p,
 footer aside div.widget_text div.textwidget,
 footer aside div.widget_text div.textwidget p{
-    color: rgba( 255, 255, 255, 0.5 );
+    color: rgba( 255, 255, 255, 0.85 );
 
     font-family: "Open Sans", sans-serif, Arial, serif;
     font-size: 13px;

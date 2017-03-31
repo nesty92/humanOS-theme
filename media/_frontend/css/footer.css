@@ -1,6 +1,10 @@
 footer{
-    background-color: #37474f;
+    background-color: #773F5C;
 }
+footer .copyright{
+color: rgba( 255, 255, 255, 0.7 );
+}
+
 footer aside div.row{
     margin-bottom: 0px;
 }
@@ -62,8 +66,8 @@ footer .mythemes-copyright div.container div.row{
 /* SOCIAL ICONS */
 footer div.mythemes-social{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    /*padding-bottom: 10px;*/
 }
 
 div.mythemes-social [class^="icon-"]:before,
