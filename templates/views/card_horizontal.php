@@ -55,7 +55,7 @@ global $post, $posts_total, $posts_index;
                             rel="tooltip"><?php comments_number('0', '1', '%'); ?></a>
                     <?php if (function_exists('the_views')) { ?>
                         <?php
-                        $views = (int)the_views(false);
+                        // $views = (int)the_views(false);
                         // switch($views){
                         //     case 0:
                         //         $text = "No ha sido leído";
@@ -70,7 +70,7 @@ global $post, $posts_total, $posts_index;
                         //         break;
                         // }
                         ?>
-                        | <i class="zmdi zmdi-eye"></i>&nbsp;<?php echo $views ?>
+                        | <i class="zmdi zmdi-eye"></i>&nbsp;<?php the_views(); ?>
                     <?php } ?>
                 </p>
             </div>

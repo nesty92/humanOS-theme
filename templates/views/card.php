@@ -59,9 +59,9 @@ global $post, $posts_total, $posts_index;
                         href="<?php echo get_comments_link() ?>"
                         title="<?php echo esc_attr(sprintf(__('Comment on %s'), get_the_Title())) ?>"
                         rel="tooltip"><?php comments_number( '0', '1', '%' ); ?></a></span>
-                <?php if(function_exists('the_views')) { ?>
+                <?php if(function_exists('the_views')) { ?>                
                     <?php
-                    $views = (int)the_views(false);
+                    // $views = (int)the_views(fa);
                     // switch($views){
                     //     case 0:
                     //         $text = "No ha sido leído";
@@ -76,7 +76,7 @@ global $post, $posts_total, $posts_index;
                     //         break;
                     // }
                     ?>
-                    | <i class="zmdi zmdi-eye"></i>&nbsp;<?php echo $views ?>
+                    | <i class="zmdi zmdi-eye"></i>&nbsp;<?php the_views(); ?>
                 <?php } ?>
             </p>
         </div>
@@ -92,7 +92,7 @@ global $post, $posts_total, $posts_index;
                   <?php } else { ?>
 
                       <!-- if the title is empty show "Read more about .." text -->
-                      <a href="<?php the_permalink() ?>"><?php _e('Read more about ..', 'materialize') ?></a>
+                      <a href="<?php the_permalink() ?>"><?php _e('Leer Más ..', 'materialize') ?></a>
 
                   <?php } ?>
 
