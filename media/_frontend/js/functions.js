@@ -2,6 +2,7 @@
     $(function(){
 
 
+        $('select').material_select();
 
         $('.button-collapse[data-activates="nav-mobile"]').sideNav();
         // $('.parallax').parallax();
