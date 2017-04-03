@@ -19,18 +19,8 @@ global $post, $posts_total, $posts_index;
 		    $p_thumbnail = get_post(get_post_thumbnail_id($post->ID));
 
 		    if (has_post_thumbnail($post->ID) && isset($p_thumbnail->ID)) {
-		        ?>
-
-
-		            <?php
-		            // the post thumbnail
-		            echo get_the_post_thumbnail($post->ID, 'mythemes-classic', array(
-		                'alt' => mythemes_post::title($post->ID, true),
-		                'class' => 'activator'
-		            ));
-		            ?>
-
-
+		        ?>  
+            <img alt="<?php echo mythemes_post::title($post->ID, true); ?>" src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="activator" style="background-image: url(<?php echo wp_get_attachment_url( $p_thumbnail->ID ); ?>); background-size: cover;" />		            
 		        <?php
 		    }else{ ?>
 				<img alt="portada" class="activator" src="<?php echo get_stylesheet_directory_uri(); ?>/media/_frontend/img/portada.png">

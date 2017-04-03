@@ -30,12 +30,10 @@ global $post, $posts_total, $posts_index;
 
         if (has_post_thumbnail($post->ID) && isset($p_thumbnail->ID) && $post->post_type!="question") {
             // the post thumbnail
-            echo "<img class='search_thumbnail' alt=".mythemes_post::title($post->ID, true)." src=".get_the_post_thumbnail_url()." />";
-            // echo get_the_post_thumbnail($post->ID, 'mythemes-classic', array(
-            //     'alt' => mythemes_post::title($post->ID, true),
-            //     'class' => 'search_thumbnail'
-            // ));
-        } else if($post->post_type!="question") { ?>
+            // echo "<img class='search_thumbnail' alt=".mythemes_post::title($post->ID, true)." src=".get_the_post_thumbnail_url()." />";
+            ?>
+            <img class='search_thumbnail' alt="<?php echo mythemes_post::title($post->ID, true); ?>" src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="activator" style="background-image: url(<?php echo wp_get_attachment_url( $p_thumbnail->ID ); ?>); background-size: cover;" />              
+        <?php } else if($post->post_type!="question") { ?>
 			<img alt="portada" src="<?php echo get_stylesheet_directory_uri(); ?>/media/_frontend/img/portada.png">
 		<?php }else { ?>
             <span class="comment_number"><?php echo $num; ?></span>
