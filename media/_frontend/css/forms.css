@@ -37,7 +37,7 @@ button{
 .mythemes-button:hover,
 .waves-input-wrapper:hover,
 button:hover{
-    background-color: #66bb6a;
+    background-color: #B53E7E;
     color: #ffffff;
 }
 
@@ -170,7 +170,7 @@ button:hover,
 .mythemes-btn:hover,
 .mythemes-button:hover,
 .waves-input-wrapper:hover{
-    background-color: #66bb6a;
+    background-color: #B53E7E;
     color: #ffffff;
 
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
@@ -192,7 +192,7 @@ button:focus,
 button:active,
 button:active:focus{
     outline: none;
-    background-color: #66bb6a;
+    background-color: #B53E7E;
 }
 
 input[type="checkbox"]:checked + label:before,

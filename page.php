@@ -78,6 +78,11 @@ get_header(); ?>
                         // get layout details
                         $mythemes_humanos_layout = new mythemes_humanos_layout( $settings );
 
+
+                        if($mythemes_humanos_layout->layout=='full')
+                            echo "<script>var isfullscreen=true;</script>";
+                        else
+                            echo "<script>var isfullscreen=false;</script>";
                         // left sidebar ( if exists )
                         $mythemes_humanos_layout -> sidebar( 'left' );
                     ?>

@@ -58,14 +58,18 @@
 
 
               <!-- the page content length ( 12 columns )  -->
-              <section class="col s12 ">
+              <section>
 
                   <!-- the page content -->
-                  <div>
-                      <big class="error-404-message search-error"><?php echo materialize_not_found_message(); ?></big>
-                      <p class="error-404-description"><?php echo materialize_not_found_description(); ?></p>
+                  <article>
+                      <big class="error-404-message search-error">uups... no se ha encontrado nada al respecto</big>
+                      <p class="error-404-description">¿Desea reportar este incidente?
 
-                  <div>
+                      <br/>
+                      <a class="waves-effect waves-light btn" href="//humanos.uci.cu">No</a>
+                      <a id="btn-si" class="waves-effect waves-light btn">Si</a>
+                      </p>
+                  </article>
 
               </section>
 

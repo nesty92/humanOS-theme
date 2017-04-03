@@ -9,7 +9,7 @@ if(class_exists( 'mythemes_layout' ) ){
         if( $this -> layout == $position ){
           $blog_title                     = esc_attr( get_bloginfo( 'name' ) );
           $blog_description               = esc_attr( get_bloginfo( 'description' ) );
-          $mythemes_logo_src              = esc_url( get_theme_mod( 'mythemes-blog-logo' , get_template_directory_uri() . '/media/_frontend/img/logo.png' ) );
+          $mythemes_logo_src              = esc_url( get_theme_mod( 'mythemes-blog-logo' , get_stylesheet_directory_uri() . '/media/_frontend/img/logo.png' ) );
 
 
 //             echo '<div id="stick" class="side sidebar widget-area" role="complementary">

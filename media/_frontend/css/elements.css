@@ -28,7 +28,7 @@ aside.mythemes-header-items.hidden + div.row{
     padding-bottom: 15px;
 }
 .mythemes-classic .post-thumbnail:hover{
-    background-color: rgba( 0, 0, 0, 1.0 );
+    /*background-color: rgba( 0, 0, 0, 1.0 );*/
 }
 .mythemes-classic .post-thumbnail a.valign-cell-wrapper{
     background-color: rgba( 0, 0, 0, 0 );

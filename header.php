@@ -149,6 +149,7 @@
 
                     <!-- header button -->
                     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="zmdi zmdi-menu zmdi-hc-fw"></i></a>
+
                     <a href="#" data-activates="widget-mobile" class="button-collapse right"><i class="zmdi zmdi-menu zmdi-hc-fw"></i></a>
 
                     <!-- Site Logo, Title and Description -->
@@ -345,6 +346,6 @@
                 </a>
             <?php } ?>  -->
 
-            <!-- <a class="link_up hide-on-small-only" href="#main_content"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/media/_frontend/img/up.svg">
-            </a> -->
+             <a class="link_up hide-on-small-only" href="#main_content"><img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/media/_frontend/img/up.svg">
+            </a> 
         </header>

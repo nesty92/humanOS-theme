@@ -626,10 +626,11 @@ footer aside div.widget.widget_categories ul li a::before,
 footer aside div.widget.widget_nav_menu ul li a::before,
 footer aside div.widget.widget_pages ul li a::before{
     color: rgba( 255, 255, 255, 0.3 );
-    content: '\eaa1';
+    content: '\f0da';
     margin-left: 3px;
     margin-right: 8px;
-    font-family: "fontello";
+    font-family: FontAwesome;
+    /*font-family: "fontello";*/
     font-size: 10px;
     font-style: normal;
     font-weight: normal;

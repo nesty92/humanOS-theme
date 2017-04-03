@@ -48,7 +48,7 @@ get_header(); ?>
 
 
   <div class="parallax-container">
-    <div class="parallax"><img src="<?php echo get_stylesheet_directory_uri(); ?>/media/_frontend/img/404.svg"></div>
+    <div class="parallax footer-p"><img src="<?php echo get_stylesheet_directory_uri(); ?>/media/_frontend/img/404.svg"></div>
 <div class="container">
     <div class="row">
 

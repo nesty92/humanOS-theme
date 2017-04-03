@@ -1,9 +1,18 @@
 ;(function($){
     $(function(){
-
+        $('.parallax.footer-p').parallax();
         $('select').material_select();
         $('#usp_form textarea').addClass('materialize-textarea');
         $('#usp_form #user-submitted-post').addClass('btn');
+
+        $("#btn-si").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*300)+"px",
+                top:(Math.random()*300)+"px",
+            });
+        }
+    });
 
 
         $('.button-collapse[data-activates="nav-mobile"]').sideNav();
@@ -15,10 +24,10 @@
           var winHeight = $(window).height();
           var scrollPercent = (scrollTop) / (docHeight - winHeight);
           var scrollPercentRounded = Math.round(scrollPercent*100);
-          if(scrollPercentRounded>25 && $('.link_up').css('visibility')!='visible'){
+          if(scrollPercentRounded>10 && $('.link_up').css('visibility')!='visible'){
               $('.link_up').css({visibility: 'visible'});
           }
-          else if(scrollPercentRounded<25 && $('.link_up').css('visibility')=='visible') {
+          else if(scrollPercentRounded<10 && $('.link_up').css('visibility')=='visible') {
             $('.link_up').css({visibility: 'hidden'});
           }
 
@@ -26,57 +35,28 @@
         });
 
         $('.scrollspy').scrollSpy({scrollOffset: 50});
-        $('.slider').slider({height: 200});
-        $('.button-collapse[data-activates="widget-mobile"]').sideNav({
-            menuWidth: '470', // Default is 240
-            edge: 'right', // Choose the horizontal origin
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true // Choose whether you can drag to open on touch screens
-          }
-        );
-        // $('.materialboxed').each(function(){
-        //     var parent_a = $(this).parent().parent();
-        //     if(parent_a.attr('href')){
-        //         parent_a.attr('data-src',parent_a.attr('href'))
-        //         parent_a.removeAttr('href')
-        //     }
-        // });
+        $('.slider').slider();
+        // $('.carousel.carousel-slider').carousel();
+        var isfull;
+        if (typeof isfullscreen === 'undefined' || isfullscreen === null) {
+            // variable is undefined or null
+            isfull=false;
+        }else{
+            isfull=isfullscreen;
+        }
 
-        // var observer = new MutationObserver(function(mutations) {
-        //     mutations.forEach(function(mutation) {
-        //       for(var j=0; j<mutation.addedNodes.length; ++j) {
-        //                // was a child added with ID of 'bar'?
-        //                if(mutation.addedNodes[j].id == "sidenav-overlay") {
-        //                    //console.log("bar was added!");
-        //
-        //                    $(mutation.addedNodes[j]).click(function(){
-        //                      if(state)
-        //                      show_aside();
-        //                    });
-        //                }
-        //            }
-        //
-        //         // if (mutation.attributeName === "class") {
-        //         //     var attributeValue = $(mutation.target).prop(mutation.attributeName);
-        //         //     var parent_a = $(mutation.target).parent().parent();
-        //         //     if(attributeValue.indexOf("active") != -1){
-        //         //       if(!$(mutation.target).attr('data-img'))
-        //         //           $(mutation.target).attr('data-img',$(mutation.target).attr('src'))
-        //         //       $(mutation.target).attr('src',parent_a.attr('data-src'))
-        //         //     }else{
-        //         //       // $(this).attr('data-img',$(this).attr('src'))
-        //         //       $(mutation.target).attr('src',$(mutation.target).attr('data-img'))
-        //         //     }
-        //         //
-        //         // }
-        //     });
-        // });
-        // $('img.materialboxed.size-thumbnail').each(function(){
-            // observer.observe($('body')[0],  {
-            //     childList: true
-            // });
-        // });
-        // $('.materialboxed').materialbox();
+        if(!isfull){
+            $('.button-collapse[data-activates="widget-mobile"]').sideNav({
+                menuWidth: '470', // Default is 240
+                edge: 'right', // Choose the horizontal origin
+                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true // Choose whether you can drag to open on touch screens
+              }
+            );
+        }
+        else{
+            $('.button-collapse[data-activates="widget-mobile"]').hide();
+        }
 
         $('#search').focus(function() {
             $(this).parent().parent().parent().addClass('focused');
@@ -99,33 +79,7 @@
               $('textarea#comment').html('<blockquote>'+first+comment_content+'</blockquote>');
                 });
 
-              });
-
-              // $('a[data-activates="widget-mobile"]').click(function(){
-              //   show_aside();
-              // })
-              //
-              // function show_aside(){
-              //   if(state){
-              //     $("#hiddenSideBar").toggleClass("show");
-              //     $("body").css({});
-              //     // $('#sidenav-overlay').remove();
-              //     state=false;
-              //   }
-              //   else{
-              //     $("#hiddenSideBar").toggleClass("show");
-              //     // $('body').append('<div id="sidenav-overlay" style="opacity: 1;" class=""></div>')
-              //
-              //
-              //     $("body").css({overflow:"hidden"});
-              //
-              //     state=true;
-              //   }
-              //
-              // }
-              //
-              //
-
+          });
 
 
 ////

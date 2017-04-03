@@ -6,7 +6,7 @@ div.mythemes-page + div.comments-list{
 }
 
 .wpua{
-  padding-top: 4px;
+  /*padding-top: 4px;*/
   margin-right: 4px;
 }
 
@@ -40,7 +40,7 @@ padding: 20px;
 
 .bypostauthor{
   background-color: #773F5C !important;
-  
+
   padding: 15px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2) !important;
 }
@@ -115,7 +115,7 @@ div.comment-respond h3.comment-reply-title small{
     margin: -6px 0px 1px 0px;
 }
 div.comment-respond h3.comment-reply-title small a{
-    background-color: #4caf50 !important;
+    background-color: #e74c3c !important;
     display: block;
     font-family: "Open Sans", sans-serif, Arial, serif;
     color: #ffffff;
@@ -142,11 +142,11 @@ div.comment-respond h3.comment-reply-title small a{
 }
 div.comment-respond h3.comment-reply-title small a:before{
     display: block;
-    font-family: fontello;
+    font-family: FontAwesome;
     line-height: 26px;
     width: 26px;
     font-size: 20px;
-    content: '\eb65';
+    content: '\f00d';
     margin-right: 20px;
     text-align: center;
 }
