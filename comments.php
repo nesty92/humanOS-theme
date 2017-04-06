@@ -11,7 +11,7 @@
  *  @since Materialize 1.0
  */
 
-if( comments_open() ){
+// if( comments_open() ){
     if( is_user_logged_in() ){
         echo '<div id="comments" class="comments-list user-logged-in scrollspy">';
     }
@@ -135,12 +135,13 @@ if( comments_open() ){
         'comment_field'         => $rett,
         'label_submit'          => __( 'Publicar Comentario' , 'materialize' )
     );
-
-    // get the comments form
-    echo '<div class="mythemes-comments">';
-    comment_form( $args );
-    echo '<div class="clearfix"></div>';
-    echo '</div>';
-    echo '</div>';
-}
+    if( comments_open() ){
+      // get the comments form
+      echo '<div class="mythemes-comments">';
+      comment_form( $args );
+      echo '<div class="clearfix"></div>';
+      echo '</div>';
+      echo '</div>';
+    }
+// }
 ?>

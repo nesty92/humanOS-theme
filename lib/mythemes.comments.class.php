@@ -25,18 +25,30 @@ class mythemes_humanos_comments
                 echo '<span class="comment-meta">';
 
 
+								if(comments_open()){
+		                comment_reply_link( array_merge( $args , array(
+		                    'reply_text'    => __( 'Responder', 'materialize' ),
+		                    'before'        => '<span class="comment-replay waves-effect waves-light human">',
+		                    'after'         => '</span>',
+		                    'depth'         => (int)$depth
+		                )));
 
-                comment_reply_link( array_merge( $args , array(
-                    'reply_text'    => __( 'Responder', 'materialize' ),
-                    'before'        => '<span class="comment-replay waves-effect waves-light human">',
-                    'after'         => '</span>',
-                    'depth'         => (int)$depth
-                )));
-
+										echo  '<span class="comment-replay  waves-effect waves-light human">';
+										echo '<a rel="nofollow" class="comment-quote-link" href="#respond">Citar</a>';
+										echo '</span>';
+								}
 								echo  '<span class="comment-replay  waves-effect waves-light human">';
-								echo '<a rel="nofollow" class="comment-quote-link" href="#respond">Citar</a>';
+								echo '<a href="#comment-'.$comment -> comment_ID.'" title="Enlace permanente al comentario">Enlace</a>';
 								echo '</span>';
-				echo '<span class="right comment-date waves-effect waves-light" datetime="' . esc_attr( get_comment_date( 'Y-m-d' , $comment -> comment_ID ) ) . '" class="comment-time">';
+
+								if(current_user_can('edit_comment')){
+										echo  '<span class="comment-replay  waves-effect waves-light human">';
+										edit_comment_link(__('Edit'), '  ', '');
+										echo '</span>';
+								}
+
+
+								echo '<span class="right comment-date waves-effect waves-light" datetime="' . esc_attr( get_comment_date( 'Y-m-d' , $comment -> comment_ID ) ) . '" class="comment-time">';
                 echo get_comment_date( esc_attr( get_option( 'date_format' )." g:i a" ) , $comment -> comment_ID );
                 echo '</span>';
 
